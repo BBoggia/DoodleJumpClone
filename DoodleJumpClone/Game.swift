@@ -12,5 +12,19 @@ class game: NSObject {
     
     var gameTimer: Timer!
     var score: Int!
-    var difficulty: Int!
+    var difficulty: difficulty!
+    var gameState: gameState!
+    var spriteSpeed = 1
+}
+
+enum difficulty {
+    case easy
+    case medium
+    case hard
+}
+
+enum gameState {
+    case playing
+    case stopped
+    case paused
 }
