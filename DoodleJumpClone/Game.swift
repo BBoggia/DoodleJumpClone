@@ -10,4 +10,7 @@ import UIKit
 
 class game: NSObject {
     
+    var gameTimer: Timer!
+    var score: Int!
+    var difficulty: Int!
 }

@@ -68,6 +68,9 @@
                                                 <state key="normal" title="Play">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="C5x-BC-fWl" kind="show" id="GJX-Dc-h1Q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-P6-b1M">
                                                 <rect key="frame" x="0.0" y="108" width="311" height="91.5"/>
@@ -76,6 +79,9 @@
                                                 <state key="normal" title="High Scores">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Q36-HF-zw5" kind="show" id="87B-Si-Z5p"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2R-Wp-hSV">
                                                 <rect key="frame" x="0.0" y="215.5" width="311" height="92"/>
@@ -84,6 +90,9 @@
                                                 <state key="normal" title="Settings">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="2yI-jr-2SO" kind="show" id="hCY-en-ppr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -113,11 +122,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="N5x-CH-pf0"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <segue destination="C5x-BC-fWl" kind="show" id="Irw-Tn-bx6"/>
-                        <segue destination="2yI-jr-2SO" kind="show" id="8qp-0s-LRP"/>
-                        <segue destination="Q36-HF-zw5" kind="show" id="G9c-dI-M44"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
