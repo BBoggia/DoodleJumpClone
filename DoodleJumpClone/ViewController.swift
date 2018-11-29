@@ -8,14 +8,10 @@
 
 import UIKit
 
-var Game = game()
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }
 

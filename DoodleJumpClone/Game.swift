@@ -10,11 +10,50 @@ import UIKit
 
 class game: NSObject {
     
-    var gameTimer: Timer!
-    var score: Int!
-    var difficulty: difficulty!
-    var gameState: gameState!
-    var spriteSpeed = 1
+    var score = 0
+    
+    var setDifficulty: difficulty! {
+        didSet {
+            defaults.set(setDifficulty, forKey: "diff")
+        }
+    }
+    var gameState: gameState! {
+        didSet {
+            switch gameState {
+            case .playing?:
+                start()
+            case .paused?:
+                pause()
+            case .stopped?:
+                end()
+            default:
+                end()
+            }
+        }
+    }
+    
+    let defaults = UserDefaults.standard
+    
+    override init() {
+        super.init()
+        if let diff = defaults.value(forKey: "diff") {
+            setDifficulty = diff as? difficulty
+        } else {
+            setDifficulty = .easy
+        }
+    }
+        
+        func start() {
+            
+        }
+        
+        func pause() {
+            
+        }
+        
+        func end() {
+            
+        }
 }
 
 enum difficulty {

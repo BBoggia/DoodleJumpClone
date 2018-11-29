@@ -8,39 +8,41 @@
 
 import UIKit
 
-class sprite: NSObject {
-    var width = 10
-    var height = 10
+class sprite: UIView {
     
-    var x, y: Int!
-    var speed: Int!
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
     
-    func jump() {
-        
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupView()
+    }
+    
+    private func setupView() {
+        translatesAutoresizingMaskIntoConstraints = false
+        let img = UIImageView(image: UIImage(named: "koalio_stand")!)
+        img.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        addSubview(img)
     }
 }
 
-class platform: NSObject {
-    var width = 40
-    var height = 8
+class platform: UIView {
     
-    var x, y: Int!
+    var img: UIImage!
     
-    override init() {
-        super.init()
-        x = randomX()
-        y = randomY()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
     }
     
-    func randomX() -> Int {
-        var tmp = 0
-        
-        return tmp
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupView()
     }
     
-    func randomY() -> Int {
-        var tmp = 0
-        
-        return tmp
+    private func setupView() {
+        backgroundColor = .black
     }
 }

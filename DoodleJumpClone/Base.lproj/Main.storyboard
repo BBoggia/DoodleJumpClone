@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="316" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Nac-UP-ZJ5">
             <objects>
-                <viewController id="C5x-BC-fWl" sceneMemberID="viewController">
+                <viewController id="C5x-BC-fWl" customClass="GameViewController" customModule="DoodleJumpClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Lc-R1-yjw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
