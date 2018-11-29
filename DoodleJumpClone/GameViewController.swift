@@ -14,13 +14,13 @@ class GameViewController: UIViewController {
     var player: sprite!
     var platforms: [platform] = []
     
-    var gameTimer: Timer!
+    var gameTimer: Timer?
     var timeSinceStart = 0 {
         didSet {
             print(timeSinceStart)
         }
     }
-    var jumpTimer: Timer!
+    var jumpTimer: Timer?
     var jumpCount = 0 {
         didSet {
             print(jumpCount)
@@ -38,10 +38,10 @@ class GameViewController: UIViewController {
     
     func start() {
         Game.gameState = .playing
-        gameTimer = Timer(timeInterval: 1, repeats: true, block: { (_) in
+        gameTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             self.timeSinceStart += 1
-        })
-        jumpDown()
+        }
+        fall()
     }
     
     func pause() {
@@ -52,13 +52,43 @@ class GameViewController: UIViewController {
         Game.gameState = .stopped
     }
     
+    func fall() {
+        jumpTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            print("FALL TIMER")
+            self.player.frame = CGRect(x: self.player.frame.minX, y: self.player.frame.minY + 1, width: self.player.frame.width, height: self.player.frame.height)
+            for i in self.platforms {
+                if self.player.frame.maxY == i.frame.minY {
+                    self.jumpTimer?.invalidate()
+                    self.jump()
+                }
+            }
+            if self.player.frame.maxY > self.view.frame.height {
+                self.jumpTimer?.invalidate()
+                self.jump()
+            }
+        }
+    }
+    
+    func jump() {
+        jumpTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            print("JUMP TIMER")
+            self.player.frame.offsetBy(dx: 0, dy: -1)
+            self.jumpCount += 1
+            if self.jumpCount == 60 {
+                self.jumpCount = 0
+                self.jumpTimer?.invalidate()
+                self.fall()
+            }
+        }
+    }
+    
     func jumpUp() {
         print("JUMP UP START")
         jumpTimer = Timer(timeInterval: 0.2, repeats: true, block: { (_) in
             self.player.frame.offsetBy(dx: 0, dy: -2)
             self.jumpCount += 2
             if self.jumpCount == 80 {
-                self.jumpTimer.invalidate()
+                self.jumpTimer?.invalidate()
                 self.jumpDown()
             }
             print("JUMP UP END")
@@ -72,7 +102,7 @@ class GameViewController: UIViewController {
             self.jumpCount -= 2
             for i in self.platforms {
                 if self.player.frame.maxY == i.frame.minY {
-                    self.jumpTimer.invalidate()
+                    self.jumpTimer?.invalidate()
                     self.jumpUp()
                 }
             }
