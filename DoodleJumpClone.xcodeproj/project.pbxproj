@@ -17,6 +17,7 @@
 		01C6418821AC691A0061B083 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6418721AC691A0061B083 /* HighScoreViewController.swift */; };
 		01C6418A21AC6CAF0061B083 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6418921AC6CAF0061B083 /* Game.swift */; };
 		01C6418C21AC6CD40061B083 /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6418B21AC6CD40061B083 /* Sprite.swift */; };
+		2D9D474521B9E42F006DFAE3 /* highScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9D474421B9E42F006DFAE3 /* highScores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		01C6418721AC691A0061B083 /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		01C6418921AC6CAF0061B083 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		01C6418B21AC6CD40061B083 /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		2D9D474421B9E42F006DFAE3 /* highScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highScores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				01C6418721AC691A0061B083 /* HighScoreViewController.swift */,
 				01C6418921AC6CAF0061B083 /* Game.swift */,
 				01C6418B21AC6CD40061B083 /* Sprite.swift */,
+				2D9D474421B9E42F006DFAE3 /* highScores.swift */,
 				01C6417521AC5F9B0061B083 /* Main.storyboard */,
 				01C6417821AC5F9D0061B083 /* Assets.xcassets */,
 				01C6417A21AC5F9D0061B083 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			files = (
 				01C6417421AC5F9B0061B083 /* ViewController.swift in Sources */,
 				01C6418A21AC6CAF0061B083 /* Game.swift in Sources */,
+				2D9D474521B9E42F006DFAE3 /* highScores.swift in Sources */,
 				01C6418821AC691A0061B083 /* HighScoreViewController.swift in Sources */,
 				01C6418421AC68DA0061B083 /* GameViewController.swift in Sources */,
 				01C6418C21AC6CD40061B083 /* Sprite.swift in Sources */,

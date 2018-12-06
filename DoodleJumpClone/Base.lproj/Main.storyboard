@@ -34,13 +34,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n71-cc-BGD">
-                                <rect key="frame" x="16" y="36" width="343" height="615"/>
+                                <rect key="frame" x="0.0" y="36" width="0.0" height="615"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-uA-8iV">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="307.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="307.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doodle Jump Clone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-Yx-puf">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="307.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="307.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -48,10 +48,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lqb-vG-BRI">
-                                        <rect key="frame" x="16" y="307.5" width="311" height="307.5"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="0.0" height="307.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGn-TS-FXd">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="92"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="92"/>
                                                 <color key="backgroundColor" red="0.99464324849999997" green="0.82469656039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <state key="normal" title="Play">
@@ -62,7 +62,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-P6-b1M">
-                                                <rect key="frame" x="0.0" y="108" width="311" height="91.5"/>
+                                                <rect key="frame" x="0.0" y="108" width="0.0" height="91.5"/>
                                                 <color key="backgroundColor" red="0.99464324849999997" green="0.82469656039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <state key="normal" title="High Scores">
@@ -73,7 +73,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2R-Wp-hSV">
-                                                <rect key="frame" x="0.0" y="215.5" width="311" height="92"/>
+                                                <rect key="frame" x="0.0" y="215.5" width="0.0" height="92"/>
                                                 <color key="backgroundColor" red="0.99464324849999997" green="0.82469656039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <state key="normal" title="Settings">
@@ -135,7 +135,7 @@
         <!--High Scores-->
         <scene sceneID="DCz-qR-L1p">
             <objects>
-                <viewController title="High Scores" id="Q36-HF-zw5" sceneMemberID="viewController">
+                <viewController title="High Scores" id="Q36-HF-zw5" customClass="HighScoreViewController" customModule="DoodleJumpClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fko-L3-nRN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,43 +203,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-uY-CZI">
-                                <rect key="frame" x="71" y="242" width="288" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-uY-CZI">
+                                <rect key="frame" x="71" y="242" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-ZM-PGK">
-                                <rect key="frame" x="72" y="308" width="287" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-ZM-PGK">
+                                <rect key="frame" x="72" y="308" width="244" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-CZ-HOI">
-                                <rect key="frame" x="71" y="374" width="288" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-CZ-HOI">
+                                <rect key="frame" x="71" y="374" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-EB-pSO">
-                                <rect key="frame" x="71" y="440" width="288" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-EB-pSO">
+                                <rect key="frame" x="71" y="440" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ME-ol-eOe">
-                                <rect key="frame" x="71" y="506" width="288" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ME-ol-eOe">
+                                <rect key="frame" x="71" y="506" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: ??? Score: ???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-ds-KIK">
-                                <rect key="frame" x="71" y="569" width="288" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: ???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-ds-KIK">
+                                <rect key="frame" x="71" y="569" width="245" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -250,6 +250,14 @@
                         <viewLayoutGuide key="safeArea" id="pod-AH-KjT"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scoreFive" destination="2ME-ol-eOe" id="wQR-do-yyv"/>
+                        <outlet property="scoreFour" destination="OgJ-EB-pSO" id="aIk-GJ-4Gx"/>
+                        <outlet property="scoreOne" destination="SRN-uY-CZI" id="eKT-vX-4j2"/>
+                        <outlet property="scoreSix" destination="Qou-ds-KIK" id="nEY-X0-r1K"/>
+                        <outlet property="scoreThree" destination="wiQ-CZ-HOI" id="WaS-GY-2as"/>
+                        <outlet property="scoreTwo" destination="ZTb-ZM-PGK" id="IH4-0H-naP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKa-0w-GQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,7 +266,7 @@
         <!--Settings-->
         <scene sceneID="xlU-2U-FJI">
             <objects>
-                <viewController title="Settings" id="2yI-jr-2SO" sceneMemberID="viewController">
+                <viewController title="Settings" id="2yI-jr-2SO" customClass="SettingsViewController" customModule="DoodleJumpClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWC-jt-y36">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
