@@ -131,13 +131,15 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8r-6F-bmd">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
                                         <connections>
-                                            <action selector="leftBtn:" destination="C5x-BC-fWl" eventType="touchUpInside" id="cu2-oQ-XzX"/>
+                                            <action selector="leftDown:" destination="C5x-BC-fWl" eventType="touchDown" id="dk3-k2-YuD"/>
+                                            <action selector="leftUp:" destination="C5x-BC-fWl" eventType="touchUpOutside" id="tWt-dA-RiD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gw-M9-JfK">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
                                         <connections>
-                                            <action selector="rightBtn:" destination="C5x-BC-fWl" eventType="touchUpInside" id="Slh-OO-Bef"/>
+                                            <action selector="rightDown:" destination="C5x-BC-fWl" eventType="touchDown" id="i1P-Cs-5iu"/>
+                                            <action selector="rightUp:" destination="C5x-BC-fWl" eventType="touchUpOutside" id="evh-h6-NeE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -157,6 +159,10 @@
                         <viewLayoutGuide key="safeArea" id="eeL-NU-6Ap"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="leftButton" destination="R8r-6F-bmd" id="3wP-p9-ccU"/>
+                        <outlet property="rightButton" destination="2gw-M9-JfK" id="Gv1-CW-qNK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4P7-LE-hhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
