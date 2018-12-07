@@ -37,7 +37,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         player = sprite(frame: CGRect(x: self.view.frame.width/2, y: self.view.frame.height * (6/10), width: 40, height: 40))
-        platformsStart.append(platform(frame: CGRect(x: randX(), y: self.view.frame.height * (6/10) + 80, width: 105, height: 8)))
+        /*platformsStart.append(platform(frame: CGRect(x: randX(), y: self.view.frame.height * (6/10) + 80, width: 105, height: 8)))
         platformsStart.append(platform(frame: CGRect(x: randX(), y: self.view.frame.height * (5/10) + 80, width: 105, height: 8)))
         platformsStart.append(platform(frame: CGRect(x: randX(), y: self.view.frame.height * (4/10) + 80, width: 105, height: 8)))
         platformsStart.append(platform(frame: CGRect(x: randX(), y: self.view.frame.height * (3/10) + 80, width: 105, height: 8)))
@@ -47,10 +47,10 @@ class GameViewController: UIViewController {
         
         for i in 0...platformsStart.count - 1 {
             view.addSubview(platformsStart[i])
-        }
+        }*/
         view.addSubview(player)
-        view.bringSubviewToFront(leftButton)
-        view.bringSubviewToFront(rightButton)
+        view.bringSubview(toFront: leftButton)
+        view.bringSubview(toFront: rightButton)
         
         start()
         createPlatforms()
@@ -122,7 +122,7 @@ class GameViewController: UIViewController {
     
     func createPlatforms() {
         platformTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
-            self.platforms.insert(platform(frame: CGRect(x: self.randX(), y: 0, width: 105, height: 8)), at: 0)
+            self.platforms.insert(platform(frame: CGRect(x: self.randX(), y: 0, width: 85, height: 8)), at: 0)
             self.view.addSubview(self.platforms[0])
         }
         platformTimer = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { _ in
@@ -141,7 +141,8 @@ class GameViewController: UIViewController {
     }
     
     func randX() -> CGFloat {
-        return CGFloat.random(in: 1...self.view.frame.width - 105)
+        let float = CGFloat(Float(self.view.frame.width)*(Float(arc4random())/Float(UINT32_MAX)))
+        return float
     }
     
     override func viewWillDisappear(_ animated: Bool) {
