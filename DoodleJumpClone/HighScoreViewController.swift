@@ -18,6 +18,7 @@ class HighScoreViewController: UIViewController {
     @IBOutlet weak var scoreSix: UILabel!
     
     func updateHighScores(){
+        highScores.pullLocalScores()
         scoreOne.text = "Score: \(highScores.scores[0])"
         scoreTwo.text = "Score: \(highScores.scores[1])"
         scoreThree.text = "Score: \(highScores.scores[2])"

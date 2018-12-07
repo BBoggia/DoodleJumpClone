@@ -9,7 +9,26 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    @IBOutlet weak var colorButton: UIButton!
+    @IBOutlet weak var difficultyButton: UIButton!
+    @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var highScoresButton: UIButton!
+    @IBOutlet weak var quitButton: UIButton!
+    @IBAction func colorChanged(_ sender: UIButton) {
+    }
+    @IBAction func difficultyChanged(_ sender: UIButton) {
+    }
+    @IBAction func restartChanged(_ sender: UIButton) {
+    }
+    @IBAction func highScoresChanged(_ sender: UIButton) {
+        highScores.clearHighScores()
+    }
+    @IBAction func quitFunction(_ sender: UIButton) {
+        exit(0)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +36,6 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
