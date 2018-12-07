@@ -7,10 +7,10 @@
 //
 
 import UIKit
+var Game = game()
 
 class GameViewController: UIViewController {
     
-    var Game = game()
     var player: sprite!
     var platforms: [platform] = []
     
